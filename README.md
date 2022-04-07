@@ -11,12 +11,12 @@ XMEME is an application, currently work in progress, built with Java SpringBoot 
 
 
 GET
-curl --location --request GET 'http://localhost:8081/memes/'
+```curl --location --request GET 'http://localhost:8081/memes/'```
 
 
 POST
 
-curl --location --request POST 'http://<Server_URL>/memes/' \
+```curl --location --request POST 'http://<Server_URL>/memes/' \
 
 --header 'Content-Type: application/json' \
 
@@ -29,7 +29,7 @@ curl --location --request POST 'http://<Server_URL>/memes/' \
 "caption": "This is a meme"
 
 }'
-
+```
 
 
 This file can be used as a template for initializing and running spring projects.
