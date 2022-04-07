@@ -1,3 +1,12 @@
+## XMEME
+
+XMEME is an application, currently work in progress, built with Java SpringBoot and MongoDB. It will ben used to store meme information in Database. It contains 3 APIs for now:
+
+1) POST a request - save a new meme. check s fro duplicates
+2) GET by ID
+3) GET top 100
+
+
 This file can be used as a template for initializing and running spring projects.
 
 What's included: 
