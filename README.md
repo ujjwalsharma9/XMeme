@@ -6,21 +6,15 @@ XMEME is an application, currently work in progress, built with Java SpringBoot 
 2) GET by ID
 3) GET top 100
 
-#Bring up your server by running the command inside your cloned repository.
 
 ./gradlew bootrun
 
 
-#Execute the curl commands to verify the api request and response.
-
-# Execute the GET /memes endpoint using curl to ensure your DB is in a clean slate
-
-# Should return an empty array.
-
+GET
 curl --location --request GET 'http://localhost:8081/memes/'
 
 
-# Execute the POST /memes endpoint using curl
+POST
 
 curl --location --request POST 'http://<Server_URL>/memes/' \
 
@@ -35,11 +29,6 @@ curl --location --request POST 'http://<Server_URL>/memes/' \
 "caption": "This is a meme"
 
 }'
-
-
-# Execute the GET /memes endpoint using curl
-
-curl --location --request GET 'http://localhost:8081/memes/'
 
 
 
