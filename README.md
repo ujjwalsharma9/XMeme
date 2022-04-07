@@ -16,7 +16,8 @@ GET
 
 POST
 
-```curl --location --request POST 'http://localhost:8081/memes/' \
+```
+curl --location --request POST 'http://localhost:8081/memes/' \
 
 --header 'Content-Type: application/json' \
 
