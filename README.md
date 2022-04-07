@@ -7,7 +7,7 @@ XMEME is an application, currently work in progress, built with Java SpringBoot 
 3) GET top 100
 
 
-./gradlew bootrun
+```./gradlew bootrun```
 
 
 GET
