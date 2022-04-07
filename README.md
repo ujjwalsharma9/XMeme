@@ -6,6 +6,42 @@ XMEME is an application, currently work in progress, built with Java SpringBoot 
 2) GET by ID
 3) GET top 100
 
+#Bring up your server by running the command inside your cloned repository.
+
+./gradlew bootrun
+
+
+#Execute the curl commands to verify the api request and response.
+
+# Execute the GET /memes endpoint using curl to ensure your DB is in a clean slate
+
+# Should return an empty array.
+
+curl --location --request GET 'http://localhost:8081/memes/'
+
+
+# Execute the POST /memes endpoint using curl
+
+curl --location --request POST 'http://<Server_URL>/memes/' \
+
+--header 'Content-Type: application/json' \
+
+--data-raw '{
+
+"name": "xyz",
+
+"url": "https://cwod-assessment-images.s3.ap-south-1.amazonaws.com/images/130.png",
+
+"caption": "This is a meme"
+
+}'
+
+
+# Execute the GET /memes endpoint using curl
+
+curl --location --request GET 'http://localhost:8081/memes/'
+
+
 
 This file can be used as a template for initializing and running spring projects.
 
